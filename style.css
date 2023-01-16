@@ -211,3 +211,9 @@ aside a {
     background-color: purple;
   }
 }
+.castle-games {
+  position: absolute;
+  top: 70%;
+  left: 5%;
+  text-align: center;
+}

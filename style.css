@@ -1,0 +1,213 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(177, 134, 27);
+}
+header {
+  background-image: url(קוביות\ רקע.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: left;
+  width: 100%;
+  height: 250px;
+}
+h2 {
+  height: 250px;
+  font-size: 4em;
+  text-align: center;
+  margin-left: 38%;
+  margin-top: 5%;
+  color: rgb(255, 252, 252);
+  font-weight: bold;
+}
+
+h2 span {
+  display: inline-block;
+}
+h2 span::first-letter {
+  color: goldenrod;
+  font-size: 2em;
+  font-weight: bold;
+}
+.scroller {
+  padding: 1rem;
+  background-color: rgb(0, 0, 0);
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  border-radius: 8px;
+  max-width: 1000px;
+  margin: auto;
+  position: absolute;
+  bottom: 5%;
+  left: 20%;
+}
+.imges-container {
+  display: flex;
+  gap: 50px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  background-color: rgb(188, 156, 76);
+  padding: 8px;
+}
+.imges-container img {
+  height: 150px;
+  width: 300px;
+  scroll-snap-align: start;
+}
+.imges-container figure {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: black;
+}
+.imges-container a {
+  text-decoration: none;
+}
+img.a {
+  width: 200px;
+  transition: 2000ms;
+}
+img.a:hover {
+  transform: scale(1.5, 1.5);
+}
+div .h2main {
+  position: absolute;
+  left: 7%;
+  display: flex;
+  align-items: flex-end;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 2.6em;
+}
+div .h5main {
+  position: absolute;
+  left: 40%;
+  display: flex;
+  bottom: 350px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 1.8em;
+}
+aside {
+  background-color: black;
+  border-radius: 8px;
+  position: absolute;
+  bottom: -550px;
+  left: 85%;
+  width: 150px;
+  height: 500px;
+  vertical-align: top;
+  padding: 10px 10px 10px 10px;
+}
+
+aside a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.dice {
+  position: absolute;
+  bottom: -450%;
+  left: 18%;
+  width: 100px;
+  transition: 2000ms;
+}
+.dice:hover {
+  transform: rotate(360deg);
+}
+.DiceTower {
+  position: absolute;
+  bottom: 52%;
+}
+
+.container {
+  width: 80px;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bar {
+  background-color: red;
+  width: 10px;
+  height: 0;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.bar:nth-child(1) {
+  animation: bnce 0.7s 0.1s infinite alternate;
+}
+@keyframes bnce {
+  30% {
+    height: 30px;
+    background-color: tomato;
+  }
+  60% {
+    height: 50px;
+    background-color: purple;
+  }
+  100% {
+    height: 20px;
+    background-color: red;
+  }
+}
+.bar:nth-child(2) {
+  animation: bnce2 0.5s 0.5s infinite alternate;
+}
+@keyframes bnce2 {
+  20% {
+    height: 50px;
+    background-color: deepskyblue;
+  }
+  40% {
+    height: 30px;
+    background-color: orange;
+  }
+  100% {
+    height: 60px;
+    background-color: green;
+  }
+}
+.bar:nth-child(3) {
+  animation: bnce3 0.8s 0.3s infinite alternate;
+}
+@keyframes bnce3 {
+  80% {
+    height: 70px;
+  }
+  100% {
+    background-color: blue;
+  }
+}
+.bar:nth-child(4) {
+  animation: bnce4 0.6s 0.7s infinite alternate;
+}
+@keyframes bnce4 {
+  70% {
+    height: 45px;
+  }
+  100% {
+    background-color: brown;
+  }
+}
+.bar:nth-child(5) {
+  animation: bnce5 0.5s 0.2s infinite alternate;
+}
+@keyframes bnce5 {
+  60% {
+    height: 20px;
+  }
+  100% {
+    background-color: purple;
+  }
+}
